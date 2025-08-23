@@ -26,3 +26,18 @@ function makeOrange(){
 orangeBtn.onclick = makeOrange; // eta just like option 3. baire ekta function declare kore shetar nam ta just boshay dibo . 
 /* orangeBtn.onclick = makeOrange(); // jodi evave bracket diye call kora hoy taile directly oi functione r vetorer kaj ta hoye jabe click er jonno wait korbe nah */
 
+
+/* option 4 */
+/* addEventListener--------- 
+
+*/
+/* document.getElementById('purple-btn').addEventListener('click', function makePurple(){
+    document.body.style.backgroundColor = 'purple';
+}) */
+
+    document.getElementById('purple-btn').addEventListener('mouseout', function makePurple(){
+    document.body.style.backgroundColor = 'purple';
+
+    })
+
+
