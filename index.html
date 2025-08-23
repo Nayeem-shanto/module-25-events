@@ -5,6 +5,39 @@
     <title>EVENTS</title>
 </head>
 <body>
+    <!-- option-1 for click-events handler -->
+    <h1>Javascript DOM Events</h1>
+    <button onclick="console.log(7)">Click Me</button>
+    <button ondblclick="console.log('I love you')">Log In</button>
+
     
+
+    <!-- option-2 for click events handler -->
+     <button onclick="makeYellow()">Make yellow</button>
+
+     <button ondblclick="makeGreen()">Make Green</button>
+     <br>
+     <br>
+     <button id="btn-blue">Make Blue</button>
+     <button class="btn-red">Make Red</button>
+     <button id="btn-orange">Make Orange</button>
+     <script>
+        function makeYellow(){
+            document.body.style.backgroundColor = 'yellow';
+        }
+
+        function makeGreen(){
+            /* document.body.style.backgroundColor = 'green'; */
+            const allButton = document.getElementsByTagName('button');
+        for(const allBtn of allButton){
+            console.log(allBtn);
+            allBtn.style.backgroundColor = 'red'; 
+         }
+        }
+        /* 3rd option for click events handler */
+        /* event.js file e  */
+     </script>
+
+    <script src="./styles/js/event.js"></script>
 </body>
 </html>
