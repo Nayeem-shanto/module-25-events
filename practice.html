@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list-item{
+            border: 1px solid green;
+            width: 50px;
+            margin-top: 10px;
+            padding: 5px;
+            text-align: center;
+            background-color: bisque;
+
+        }
+    </style>
+</head>
+<body>
+    <ul id="item-container">
+        <li class="list-item">Item-1</li>
+        <li class="list-item">Item-2</li>
+        <li class="list-item">Item-3</li>
+        <li class="list-item">Item-4</li>
+        <li class="list-item">Item-5</li>
+    </ul>
+    <script>
+        console.log(document.getElementsByTagName('li'));
+        /* new element create kroa */
+        const newElement = document.createElement('li');
+        console.log(newElement);
+/*  new element er value set kora. */
+        newElement.innerText= 'Item-6';
+        /* new element ke ekta parent er moddhe asign kora. */
+        const listContainer = document.getElementById('item-container');
+        console.log(listContainer);
+        listContainer.appendChild(newElement);
+/* ekta style class add kora. */
+        newElement.classList.add('list-item')
+    </script>
+</body>
+</html>
