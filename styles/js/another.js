@@ -19,3 +19,6 @@ document.getElementById('click-btn').addEventListener('click', function(){
     newElement.appendChild(newChild);
     textArea.value = '';
 })
+
+/* ekhane ekta problem hocche kisu na likheo butoon e click krole shetao add hoccchhe. 
+need to fix. */
